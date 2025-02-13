@@ -12,6 +12,7 @@ nav a:focus {
 .skip a{
      position: absolute;
      top:-40px;
+     left: 0;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
@@ -32,7 +33,7 @@ nav a:focus {
 .container { 
      display: grid;
      grid-template-columns:1fr 5fr 1fr;
-     gap: 15px;
+     grid-row-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -109,9 +110,10 @@ first div in the grid  and place it in the grid. */
      grid-column: 3/ span 2;
   }
 
-  .method, .contact, .about-image, .clients-image{
-     grid-column: 2/span2;
-  }
+  .about-image, .clients-image, .method, .contact {
+     grid-column: 2 / span 2;
+}
+
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
 
